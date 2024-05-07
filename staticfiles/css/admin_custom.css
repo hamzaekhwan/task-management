@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #d6961f; /* Orange color */
+}
+
+.submit-row input,
+.submit-row input[type="submit"],
+.submit-row input[type="button"] {
+    background-color: var(--primary-color);
+}
+
+#header, 
+.module caption, 
+.dashboard-module a:link, 
+.dashboard-module a:visited, 
+div.breadcrumbs {
+    background-color: var(--primary-color); /* Apply the same orange color */
+}
+
+.related-widget-wrapper-link {
+    color: var(--primary-color) !important;
+}
+
+/* Additional style for breadcrumbs */
+.breadcrumbs {
+    color: #FFFFFF; /* White text for contrast */
+}

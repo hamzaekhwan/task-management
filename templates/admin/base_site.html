@@ -1,0 +1,26 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Administration{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/admin_custom.css' %}">
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <a href="{% url 'admin:index' %}">
+            <img src="{% static 'images/my-logo.png' %}" alt="My Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+            Task Management
+        </a>
+    </h1>
+{% endblock %}
+
+{% block footer %}
+    <div style="text-align: right; padding-right: 20px;">
+        <p>&copy; {{ 2024 }} Brejawe. All rights reserved.</p>
+    </div>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
